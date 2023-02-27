@@ -8,30 +8,31 @@ A simple mail server written in Java
 
 ## Example Simulation of an SMTP Protocol interaction between a Client and a Server
 
-//  Client sends a HELO command to the server
+Client sends a HELO command to the server
 - C: HELO example.com
 - S: 250 Hello example.com, pleased to meet you.
 
-//  Client sends a MAIL FROM command to the server
+
+Client sends a MAIL FROM command to the server
 - C: MAIL FROM:<sender@fci-cu.edu.eg.com>
 - S: 250 Ok
 
-//  Client sends a RCPT TO command to the server
+Client sends a RCPT TO command to the server
 - C: RCPT TO:<recipient@fci-cu.edu.eg.com>
 - S: 250 Ok
 
-//  Client sends a DATA command to the server
+Client sends a DATA command to the server
 - C: DATA
 - S: 354 Enter message, ending with "end of email" on a line by itself
 
-//  Client sends the email message to the server
+Client sends the email message to the server
 - C: Subject: This is the subject of the email
 - C:
 - C: This is the body of the email
 - C: end of email
 - S: 250 Ok: queued as 12345
 
-//  Client sends a QUIT command to the server
+Client sends a QUIT command to the server
 - C: QUIT
 - S: 221 Bye
 
