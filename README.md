@@ -50,6 +50,7 @@ Client sends a QUIT command to the server
 
 -- Finally, the client sends a 'QUIT' command to indicate that it's finished with the SMTP session. The server responds with a goodbye message and closes the connection.
 
+![afdf](https://github.com/abdo-essam/SMTP/blob/main/Images/SMTP_commands_overview.png)
 
 For more info you can visit : https://postmarkapp.com/guides/everything-you-need-to-know-about-smtp
 
